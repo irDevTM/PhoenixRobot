@@ -3,7 +3,7 @@
 
 */
 ob_start();
-$API_KEY = 'TOKEN';
+$API_KEY = 'TOKEN'; // توکن بات را اینجا بگذارید
 ##------------------------------##
 define('API_KEY',$API_KEY);
 include 'jdf.php';
@@ -168,7 +168,7 @@ $left_chat_member_id = $left_chat_member->id;
 $left_chat_member_first_name = $left_chat_member->first_name;
 $left_chat_member_username = $left_chat_member->username;
 $groupname = $message->chat->title;
-$me_username = "PhoenixRobot";
+$me_username = "PhoenixRobot"; // یوزرنیم بات خود را بدون @ بگذارید
 $data = $update->callback_query->data;
 $chatid = $update->callback_query->message->chat->id;
 $fromid = $update->callback_query->from->id;
@@ -178,7 +178,7 @@ $creator = getcreator($chat_id);
 $creator_id = $creator['id'];
 $gpadmin = getgpadmin($chat_id);
 $gpadmin_id = $gpadmin['id'];
-$ADMIN = 188740934;
+$ADMIN = 188740934; // ایدی عددی مدیر ربات را در اینجا بگذارید
 $sudos = file_get_contents("sudos.txt");
 $sudoss = explode("\n", $sudos);
 $owner_id = file_get_contents("data/$chat_id/owner.txt");
